@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Navigation -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+
+    <!-- font-awesome css link -->
+    <script src="https://kit.fontawesome.com/910c017eb0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="cd-auto-hide-header">  
+        <nav class="cd-primary-nav">
+           <a href="#Home"><img class="home_button" src="img/home_89292.png"></a>
+           <a href="#cd-navigation" class="nav-trigger">
+              <span>
+                 <em aria-hidden="true"></em>
+                 Menu
+              </span>
+           </a> <!-- .nav-trigger -->
+     
+           <ul id="cd-navigation">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#Projects">Projects</a></li>
+           </ul>
+        </nav> <!-- .cd-primary-nav -->
+     </header> <!-- .cd-auto-hide-header -->
+     
+     <main class="cd-main-content">
+        <!-- content here -->
+        <div id="Home">
+            <div class="home_container">
+               <div class="typer">
+                 <h2 class="introduction">신입 백엔드 개발자 <strong class="intro_strong">박상우</strong>입니다.</h2>
+               </div>
+            </div>
+        </div>
+
+        <div id="About">
+           <div class="about_container">
+              <div class="about_profile">
+                <img src="./img/DSCF2357__3.jpg" class="profilePic">
+
+                <div class="about_icons">
+                   <a href="https://github.com/donggri232" target="_blank"><i class="fab fa-github-square"></i></a>
+                  </div>
+                <div class="about_me">
+                  <span class="about_me_q">
+                     <strong class="about_me_qb">성명:</strong><br/><br/>
+                     <strong class="about_me_qb">전화번호:</strong><br/><br/>
+                     <strong class="about_me_qb">E-Mail:</strong><br/><br/>
+                  </span>
+                  <span class="about_me_a">
+                     <b class="about_me_qa">박상우</b><br/><br/>
+                     <b class="about_me_qa">010-2773-2402</b><br/><br/>
+                     <b class="about_me_qa">donggri232@naver.com</b>
+                  </span>
+                </div>
+               </div>
+
+              <div class="about_profile_right">
+                  <div class="about_me2">
+                     약 6개월간의 국비교육을 통해 웹 개발자의 기본 기량을 길렀고, <br/><br/> 
+                     비전공자로써 부족한 부분은 남들보다 더 열심히, 더 낮은 자세로<br/><br/>
+                     배워나가면서 일하겠습니다.<br/><br/>
+                     감사합니다.
+                  </div> 
+              </div>
+           </div>                
+        </div>
+
+        <div id="Skills">
+           <div class="skills_container"> 
+                  <h2 class="skills_highlight">Skills</h2>
+                  <div class="skills_icon">
+                     <img src="./img/480px-HTML5_logo_and_wordmark.svg.png" class="skills_icon_img">
+                     <img src="./img/css3-logo-png-transparent.png" class="skills_icon_img">
+                     <img src="./img/oracle.png" class="skills_icon_img">
+                     <img src="./img/Ajax.png" class="skills_icon_img">
+                     <br/>
+                     <img src="./img/jQuery.png" class="skills_icon_img">
+                     <img src="./img/javascript.png" class="skills_icon_img">
+                     <img src="./img/java.png" class="skills_icon_img">
+                     <img src="./img/spring.png" class="skills_icon_img">
+                     
+                  </div> 
+            </div>
+        </div>
+
+        <div id="Projects">
+           <div class="projects_container">
+               <div class="projects_title">
+                  Projects
+               </div>
+
+               <div class="projectslider">
+                  <div class="projectimg"><img src="img/Ajax.png" alt=""></div>
+                  <div class="projectimg"><img src="img/Ajax.png" alt=""></div>
+                  <div class="projectimg"><img src="img/Ajax.png" alt=""></div>
+            </div>
+        </div>
+        
+     </main> <!-- .cd-main-content -->
+
+
+
+      <!-- Slick -->
+      <script type="text/javascript">
+         $(document).ready(function(){
+            $('.projectslider').slick({
+               dots: true,
+               infinite: true,
+               speed: 500,
+               fade: true,
+               cssEase: 'linear'
+            });
+         });
+       </script>
+
+
+</body>
+</html>
